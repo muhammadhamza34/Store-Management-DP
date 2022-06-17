@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreManagementSystem", "StoreManagementSystem.csproj", "{B6044F10-B9C3-4105-AAB5-7E3ED45C6EE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommandPattern", "CommandPattern", "{59684933-548A-48C0-BFA5-0C385C85EFA8}"
+	ProjectSection(SolutionItems) = preProject
+		Comander.cs = Comander.cs
+		CommandLister.cs = CommandLister.cs
+		Redo.cs = Redo.cs
+		Undo.cs = Undo.cs
+		UndoRedoRecv.cs = UndoRedoRecv.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProxyPattern", "ProxyPattern", "{C6E7CFE1-89B9-4D7E-9A19-69C5F7FD388B}"
+	ProjectSection(SolutionItems) = preProject
+		CommanderListerInterface.cs = CommanderListerInterface.cs
+		Proxy.cs = Proxy.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6044F10-B9C3-4105-AAB5-7E3ED45C6EE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6044F10-B9C3-4105-AAB5-7E3ED45C6EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6044F10-B9C3-4105-AAB5-7E3ED45C6EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6044F10-B9C3-4105-AAB5-7E3ED45C6EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8DA3861-5259-4A95-8092-CEEC45F70A94}
+	EndGlobalSection
+EndGlobal

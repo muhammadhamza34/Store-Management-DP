@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6044F10-B9C3-4105-AAB5-7E3ED45C6EE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StoreManagementSystem</RootNamespace>
+    <AssemblyName>StoreManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admins.Designer.cs">
+      <DependentUpon>Admins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admins_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admins_update.Designer.cs">
+      <DependentUpon>admins_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Comander.cs" />
+    <Compile Include="CommanderListerInterface.cs" />
+    <Compile Include="CommandLister.cs" />
+    <Compile Include="Store_management_systemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Store_management_systemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Store_management_systemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Store_management_systemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Store_management_systemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Store_management_systemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Store_management_systemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Store_management_systemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Store_management_systemDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Store_management_systemDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Store_management_systemDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Store_management_systemDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Store_management_systemDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Store_management_systemDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy Pattern\ContextStrategy.cs" />
+    <Compile Include="expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expenses.Designer.cs">
+      <DependentUpon>expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="expenses_type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expenses_type.Designer.cs">
+      <DependentUpon>expenses_type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fasaad.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmpurchasemen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmpurchasemen.Designer.cs">
+      <DependentUpon>frmpurchasemen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmsalesmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmsalesmen.Designer.cs">
+      <DependentUpon>Frmsalesmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemDetails.Designer.cs">
+      <DependentUpon>ItemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="items.Designer.cs">
+      <DependentUpon>items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OOAD_Store_management_systemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OOAD_Store_management_systemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OOAD_Store_management_systemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OOAD_Store_management_systemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="persons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="persons.Designer.cs">
+      <DependentUpon>persons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="SingleTON\ProjConn.cs" />
+    <Compile Include="Project_StoreManagementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Project_StoreManagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Project_StoreManagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Project_StoreManagementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Project_StoreManagementDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Project_StoreManagementDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Project_StoreManagementDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Project_StoreManagementDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Project_StoreManagementDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Project_StoreManagementDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Project_StoreManagementDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Project_StoreManagementDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Project_StoreManagementDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Project_StoreManagementDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy.cs" />
+    <Compile Include="purchasemen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchasemen.Designer.cs">
+      <DependentUpon>purchasemen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy Pattern\purchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy Pattern\purchases.Designer.cs">
+      <DependentUpon>purchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Redo.cs" />
+    <Compile Include="salary_payments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salary_payments.Designer.cs">
+      <DependentUpon>salary_payments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales.Designer.cs">
+      <DependentUpon>sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy Pattern\salesmen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strategy Pattern\salesmen.Designer.cs">
+      <DependentUpon>salesmen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sales_items.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales_items.Designer.cs">
+      <DependentUpon>sales_items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stock.Designer.cs">
+      <DependentUpon>stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Strategy Pattern\StrategyInterface.cs" />
+    <Compile Include="Undo.cs" />
+    <Compile Include="UndoRedoRecv.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admins.resx">
+      <DependentUpon>Admins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admins_update.resx">
+      <DependentUpon>admins_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expenses.resx">
+      <DependentUpon>expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expenses_type.resx">
+      <DependentUpon>expenses_type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmpurchasemen.resx">
+      <DependentUpon>frmpurchasemen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmsalesmen.resx">
+      <DependentUpon>Frmsalesmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemDetails.resx">
+      <DependentUpon>ItemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="items.resx">
+      <DependentUpon>items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="persons.resx">
+      <DependentUpon>persons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="purchasemen.resx">
+      <DependentUpon>purchasemen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy Pattern\purchases.resx">
+      <DependentUpon>purchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salary_payments.resx">
+      <DependentUpon>salary_payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales.resx">
+      <DependentUpon>sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strategy Pattern\salesmen.resx">
+      <DependentUpon>salesmen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales_items.resx">
+      <DependentUpon>sales_items.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock.resx">
+      <DependentUpon>stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="OOAD_Store_management_systemDataSet.xsc">
+      <DependentUpon>OOAD_Store_management_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OOAD_Store_management_systemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OOAD_Store_management_systemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OOAD_Store_management_systemDataSet.xss">
+      <DependentUpon>OOAD_Store_management_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OOAD_Store_management_systemDataSet1.xsc">
+      <DependentUpon>OOAD_Store_management_systemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OOAD_Store_management_systemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OOAD_Store_management_systemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OOAD_Store_management_systemDataSet1.xss">
+      <DependentUpon>OOAD_Store_management_systemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet.xsc">
+      <DependentUpon>Project_StoreManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Project_StoreManagementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Project_StoreManagementDataSet.xss">
+      <DependentUpon>Project_StoreManagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet1.xsc">
+      <DependentUpon>Project_StoreManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Project_StoreManagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Project_StoreManagementDataSet1.xss">
+      <DependentUpon>Project_StoreManagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet2.xsc">
+      <DependentUpon>Project_StoreManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Project_StoreManagementDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Project_StoreManagementDataSet2.xss">
+      <DependentUpon>Project_StoreManagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet3.xsc">
+      <DependentUpon>Project_StoreManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Project_StoreManagementDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Project_StoreManagementDataSet3.xss">
+      <DependentUpon>Project_StoreManagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet4.xsc">
+      <DependentUpon>Project_StoreManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Project_StoreManagementDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Project_StoreManagementDataSet4.xss">
+      <DependentUpon>Project_StoreManagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet5.xsc">
+      <DependentUpon>Project_StoreManagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Project_StoreManagementDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Project_StoreManagementDataSet5.xss">
+      <DependentUpon>Project_StoreManagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet6.xsc">
+      <DependentUpon>Project_StoreManagementDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Project_StoreManagementDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Project_StoreManagementDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Project_StoreManagementDataSet6.xss">
+      <DependentUpon>Project_StoreManagementDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Store_management_systemDataSet.xsc">
+      <DependentUpon>Store_management_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Store_management_systemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Store_management_systemDataSet.xss">
+      <DependentUpon>Store_management_systemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet1.xsc">
+      <DependentUpon>Store_management_systemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Store_management_systemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Store_management_systemDataSet1.xss">
+      <DependentUpon>Store_management_systemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet2.xsc">
+      <DependentUpon>Store_management_systemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Store_management_systemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Store_management_systemDataSet2.xss">
+      <DependentUpon>Store_management_systemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet3.xsc">
+      <DependentUpon>Store_management_systemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Store_management_systemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Store_management_systemDataSet3.xss">
+      <DependentUpon>Store_management_systemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet4.xsc">
+      <DependentUpon>Store_management_systemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Store_management_systemDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Store_management_systemDataSet4.xss">
+      <DependentUpon>Store_management_systemDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet5.xsc">
+      <DependentUpon>Store_management_systemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Store_management_systemDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Store_management_systemDataSet5.xss">
+      <DependentUpon>Store_management_systemDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet6.xsc">
+      <DependentUpon>Store_management_systemDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Store_management_systemDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Store_management_systemDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Store_management_systemDataSet6.xss">
+      <DependentUpon>Store_management_systemDataSet6.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
